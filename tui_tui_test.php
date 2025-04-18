@@ -59,7 +59,7 @@ function demoTUI() {
         echo "\r";
         flush();
         ob_flush();
-        usleep(200000);
+        usleep(100000);
     }
     echo "\n";
     flush();
@@ -83,7 +83,7 @@ function demoTUI() {
         echo "Line 3: " . str_repeat('>', $i + 1) . "\n";
         flush();
         ob_flush();
-        sleep(1);
+        sleep(0.5);
     }
 
     // Color palette demo
@@ -103,18 +103,12 @@ function demoTUI() {
     flush();
     ob_flush();
 
-    // Final spinner with different message
-    echo "\nTask 5: Finalizing demo\n";
-    flush();
-    ob_flush();
-    showSpinner(2);
-
     // New gradient effects demo
     echo "\nTask 6: Gradient Effects\n";
 
     // Red to Yellow gradient (196-226)
     echo "Red to Yellow: ";
-    for ($i = 0; $i < 30; $i++) {
+    for ($i = 0; $i < 35; $i++) {
         echo "\033[38;5;" . (196 + $i) . "m■\033[0m";
         flush();
         ob_flush();
