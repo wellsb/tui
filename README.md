@@ -21,3 +21,7 @@ tui_cpu_load_test.php
     or just 
     php tui_cpu_load_test.php
     to use defaults
+
+tui_tui_test.php
+
+    A little TUI demo widget, no deps
